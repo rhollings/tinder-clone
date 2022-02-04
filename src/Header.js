@@ -19,7 +19,7 @@ function Header({ backButton }) {
           <PersonIcon className="header__icon" fontSize="large" />
         </IconButton>
       )}
-      <Link to="/">
+      <Link to="/home">
         <img
           className="header__logo"
           src="https://logos-world.net/wp-content/uploads/2020/09/Tinder-Emblem.png"

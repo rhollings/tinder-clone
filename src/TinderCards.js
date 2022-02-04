@@ -4,13 +4,13 @@ import "./TinderCards.css";
 import database from "./firebase";
 
 function TinderCards() {
-  const [people, setPeople] = useState([]);
+  const [people, setPerson] = useState([]);
 
   useEffect(() => {
     const unsubscribe = database
-      .collection("people")
+      .collection("person")
       .onSnapshot((snapshot) =>
-        setPeople(snapshot.docs.map((doc) => doc.data()))
+        setPerson(snapshot.docs.map((doc) => doc.data()))
       );
 
     return () => {
@@ -28,7 +28,7 @@ function TinderCards() {
             preventSwipe={["up", "down"]}
           >
             <div
-              style={{ backgroundImage: `url(${person.url})` }}
+              style={{ backgroundImage: `url(${person.image})` }}
               className="card"
             >
               <h3>{person.name}</h3>

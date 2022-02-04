@@ -9,9 +9,14 @@
 
 .login__logo {
     position: absolute;
-    top: -100%;
+    top: -65%;
+    left: 20%;
     height: 100px;
     object-fit: contain;
+}
+
+h1 {
+    text-align: center;
 }
 
 .button, input {
@@ -26,6 +31,7 @@
 input {
     outline: none;
     background-color: #d4d1d1;
+    width: 90%;
 }
 
 .button {
@@ -34,12 +40,23 @@ input {
     width: 100%;
 }
 
-.login{
-    background-color: #d4d1d1;
-    color: red;
+.continue__button, .login__button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 99%;
 }
 
-.continue{
-    background-color: red;
+.continue__button:hover, .login__button:hover {
+    opacity: 0.9;
+}
+
+.continue__button {
+    background-color: #FE3C72;
     color: white;
+}
+
+.login__button {
+    background-color: #424242;
+    color: #fff;
 }

@@ -1,5 +1,7 @@
-import React from 'react';
+import React from "react";
 import "./LoginScreen.css";
+import { Link } from "react-router-dom";
+
 
 
 const LoginScreen = () => {
@@ -13,12 +15,15 @@ const LoginScreen = () => {
                 alt="tinder logo"
                 />
             </div>
+            <h1>Welcome to Tinder</h1>
             <div className='login_form'>
             <form class="login-form">
-                <input type="text" placeholder="username"/>
-                <input type="password" placeholder="password"/>
-                <button className='button login'>login</button>
-                <button className='button continue'>Contiue (as Guest)</button>
+                <input type="text" placeholder="Username"/>
+                <input type="password" placeholder="Password"/>
+                <button disabled className="login__button button">Login</button>
+                <Link to="/home">
+                    <button className="continue__button button">Continue (as Guest)</button>
+                </Link>
             </form>
             </div>
         </div>

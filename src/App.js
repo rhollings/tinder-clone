@@ -23,10 +23,13 @@ function App() {
                 <Header backButton="/" />
                 <Chats />
               </Route>
-                <Route path="/">
+              <Route path="/home">
                 <Header />
                 <TinderCards />
                 <SwipeButtons />
+              </Route>
+              <Route path="/">
+                <LoginScreen />
               </Route>
             </Switch>
           </Router>
