@@ -4,9 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## About the project
 
-Quarantine has started making me feel a bit bored, so I thought it was time to learn react. This project is part of my learn js/reactjs through developing mini apps. This build in particular was done by following CleverProgrammer's [Let's Build a TINDER Clone with REACT JS](https://www.youtube.com/watch?v=DQfeB_FKKkc) Youtube video.
-
-They have other videos such as an Amazon clone, Tiktok clone, WhatsApp clone etc. Good for beginners who want to learn reactjs by example.
+Inspired by the trendy app, I've decided to try and clone it. Also giving me the chance to practice user authenication
 
 Aside from ReactJS, this also connects to a firebase cloud firestore database.
 
